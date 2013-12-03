@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body ng-controller="myController">
+    <h1>Angular Tabs Directive</h1>
+    
+    <div tabs tabsdata='data' autorotate='1000'>
+      <div tabsnav >
+        {{ $index + 1}}
+      </div>
+			<div tabscontent>
+			  <p>
+			    {{ tab.desc }}
+			  </p>
+			</div>
+      
+    </div>
+    
+    <script src="http://code.angularjs.org/1.1.5/angular.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>

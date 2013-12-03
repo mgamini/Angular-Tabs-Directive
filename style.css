@@ -1,0 +1,5 @@
+.tabs-nav > li { cursor: pointer; }
+.tabs-nav > li.active { color: red; }
+
+.tabs-content { display: none; }
+.tabs-content.active { display: block; }
